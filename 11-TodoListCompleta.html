@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <input type="text" id="item"><br>
+    <input type="date" name="data" id="data"><br>
+    <button id="btn">Inserisci</button><br>
+
+    <div id="lista">
+          <!-- 
+            Qui compariranno singolarmente le cose da fare
+            Ogni item avrà 2 pulsanti (Modifica, Elimina)
+          -->
+
+        <!-- <li class="animate__animated animate__backInDown">Ciao Mondo</li> -->
+    </div>
+
+    <button class="mt50" id="btnStampa">Crea Versione Stampabile</button><br>
+    <div id="feedback">
+        <!-- Qui verrà mostrata la versione JSON di tutta la lista e verrò inviata nella Local o Session Storage -->
+    </div>
+
+
+    <button class="mt50" id="btnRecupera">Recupera vecchia versione</button>
+    <div id="vecchiaVers">
+        <!-- Solo nel caso in cui c'è qualcosa salvato nella Local o Session storage, stampo gli item sempre in formato JSON  -->
+    </div>
+
+
+<script src="file.js"></script>
+</body>
+</html>
