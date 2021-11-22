@@ -1,0 +1,36 @@
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mohave', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-image: url(immagini/sfondomedio.jpg);
+}
+
+.mainContainer {
+    width: 60%;
+    margin: 3rem auto;
+    background-color: #fbf1c3;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.zonaInput {
+    margin-top: 2rem;
+}
+
+#lista {
+    margin-top: 2rem;
+}
+
+.mt50 {
+    margin-top: 2rem;
+}
+
+#lista li {
+    margin-top: 1rem;
+}

@@ -4,42 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mohave&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS IN MOVIMENTO -->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-
+    
+    <title>Document</title>
 </head>
 <body>
+
+    <div class="mainContainer">
+
+        <h1>Cose da fare</h1>
+        <div id="zonaInput">  
+            <input type="text" id="item">
+            <input type="date" name="data" id="data">
+            <button id="btn">Inserisci</button>
+
+        </div>
+
+        <div id="lista">
+                <!-- 
+                    Qui compariranno singolarmente le cose da fare
+                    Ogni item avrà 2 pulsanti (Modifica, Elimina)
+                -->
+
+                <!-- <li class="animate__animated animate__backInDown">Ciao Mondo</li> -->
+        </div>
+
+        <button class="mt50" id="btnStampa">Crea Versione Stampabile</button><br>
+        <div id="feedback">
+                <!-- Qui verrà mostrata la versione JSON di tutta la lista e verrà inviata nella Local o Session Storage -->
+        </div>
+
+
+        <button class="mt50" id="btnRecupera">Recupera vecchia versione</button>
+        <div id="vecchiaVers">
+                <!-- Solo nel caso in cui c'è qualcosa salvato nella Local o Session storage, stampo gli item sempre in formato JSON -->
+        </div>
     
-    <input type="text" id="item"><br>
-    <input type="date" name="data" id="data"><br>
-    <button id="btn">Inserisci</button><br>
-
-    <div id="lista">
-          <!-- 
-            Qui compariranno singolarmente le cose da fare
-            Ogni item avrà 2 pulsanti (Modifica, Elimina)
-          -->
-
-        <!-- <li class="animate__animated animate__backInDown">Ciao Mondo</li> -->
     </div>
 
-    <button class="mt50" id="btnStampa">Crea Versione Stampabile</button><br>
-    <div id="feedback">
-        <!-- Qui verrà mostrata la versione JSON di tutta la lista e verrò inviata nella Local o Session Storage -->
-    </div>
-
-
-    <button class="mt50" id="btnRecupera">Recupera vecchia versione</button>
-    <div id="vecchiaVers">
-        <!-- Solo nel caso in cui c'è qualcosa salvato nella Local o Session storage, stampo gli item sempre in formato JSON  -->
-    </div>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="file.js"></script>
 </body>
 </html>
