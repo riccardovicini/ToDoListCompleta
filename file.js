@@ -14,14 +14,20 @@ function aggiungiToDo(){
     if (item != '' && data != '') {
 
         var itemList = document.createElement('li');
+        itemList.setAttribute('class', 'animate__animated animate__fadeInRight');
 
-        var descToDo = document.createTextNode(item);
+        var descToDo = document.createTextNode(item + ' ');
         var dataToDo = document.createTextNode(data);
         itemList.appendChild(descToDo);
         itemList.appendChild(dataToDo);
 
+        lista.appendChild(itemList);
+
         var btnModify = document.createElement('button');
         var btnDelete = document.createElement('button');
+        btnModify.setAttribute('class', 'btnLista');
+        btnDelete.setAttribute('class', 'btnLista');
+
         btnModify.innerHTML = 'Modifica';
         btnDelete.innerHTML = 'Elimina';
 
@@ -30,8 +36,6 @@ function aggiungiToDo(){
 
         btnModify.addEventListener('click', modifyToDo, false);
         btnDelete.addEventListener('click', deleteToDo, false);
-
-        lista.appendChild(itemList);
 
         document.getElementById('item').value = '';
         document.getElementById('data').value = '';

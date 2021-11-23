@@ -10,10 +10,19 @@ body {
     background-image: url(immagini/sfondomedio.jpg);
 }
 
+h1 {
+    color: #eebe22;
+    font-size: 3rem;
+}
+
+input {
+    font-size: 1.5rem;
+}
+
 .mainContainer {
     width: 60%;
     margin: 3rem auto;
-    background-color: #fbf1c3;
+    background-color: rgba(0, 0, 0, 0.50);
     text-align: center;
     border-radius: 2rem;
     padding: 2rem;
@@ -24,13 +33,90 @@ body {
 }
 
 #lista {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    list-style-position: inside;
+}
+
+#btnStampa {
     margin-top: 2rem;
 }
 
 .mt50 {
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
     margin-top: 2rem;
+    background-color: #ddebdd;
+    cursor: pointer;
+}
+
+.mt50:hover {
+    background-color: #eebe22;
 }
 
 #lista li {
     margin-top: 1rem;
+    color: #eebe22;
+    font-size: 2rem;
 }
+
+.btnLista {
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.zonaInput input {
+    font-size: 1.5rem;
+}
+
+#feedback, #vecchiaVers {
+    color: #eebe22;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.comments {
+    width: 80%;
+    margin: auto;
+    color: white;
+    background: rgba(255, 255, 255, 0.450);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.parteFinale {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+}
+
+.comm h3 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.comm p {
+    font-size: 1.5rem;
+}
+
+.imgProfilo img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.comm {
+    display: flex;
+    align-items: center;
+}
+
+.txt {
+    margin-left: 1rem;
+}
+
